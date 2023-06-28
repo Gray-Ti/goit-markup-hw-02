@@ -137,6 +137,9 @@ body {
 }
 /* -----------------Our team-------------- */
 
+.team {
+  background-color: #f4f4fd;
+}
 .team-name {
   color: var(--navyblue, #2e2f42);
   text-align: center;
