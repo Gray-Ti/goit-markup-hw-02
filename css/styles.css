@@ -16,22 +16,28 @@ body {
   list-style-type: none;
 }
 .head-logo {
-  color: var(--navyblue, #2e2f42);
-  font-size: 18px;
-  font-family: Raleway;
-  font-weight: 800;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-}
-.head-logo-web {
   color: var(--iris, #4d5ae5);
+  font-size: 18px;
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.head-logo-studio {
+  color: var(--navyblue, #2e2f42);
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .head-link {
   color: var(--navyblue, #2e2f42);
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
 .head-link:hover,
@@ -39,10 +45,13 @@ body {
   color: #404bbf;
 }
 
+.adr-contact {
+  font-style: normal;
+}
 .adr-link {
   color: var(--slate, #434455);
   font-size: 16px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
 .adr-link:hover,
@@ -53,18 +62,16 @@ body {
 /*------- main------- */
 
 .hero {
-  width: 1440px;
-  height: 600px;
-  flex-shrink: 0;
   background-color: var(--navyblue, #2e2f42);
 }
 
 .hero-title {
+  text-align: center;
   color: var(--white, #fff);
   font-size: 56px;
   font-weight: 700;
-  line-height: 60px;
-  letter-spacing: 1.12px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
 }
 
 .hero-btn {
@@ -72,8 +79,8 @@ body {
   font-size: 16px;
   font-family: inherit;
   font-weight: 500;
-  line-height: 1.15;
-  letter-spacing: 0.24em;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   background-color: var(--iris, #4d5ae5);
   cursor: pointer;
 }
@@ -92,12 +99,6 @@ body {
 /* -----princips------- */
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -108,7 +109,7 @@ body {
   color: var(--navyblue, #2e2f42);
   font-size: 20px;
   font-weight: 500;
-  line-height: 0.12;
+  line-height: 1.2;
   letter-spacing: 0.02em;
 }
 
@@ -131,10 +132,9 @@ body {
   text-transform: capitalize;
 }
 
-.what-img {
-  border: 1px solid var(--cornflower, #e7e9fc);
+.wawd {
+  background-color: #f4f4fd;
 }
-
 /* -----------------Our team-------------- */
 
 .team-name {
@@ -143,8 +143,11 @@ body {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
+}
+.team-list {
+  background-color: #ffffff;
 }
 .specialists-team {
   color: var(--navyblue, #2e2f42);
@@ -152,7 +155,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
 }
 
 .position-team {
@@ -160,7 +163,7 @@ body {
   text-align: center;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
 }
 
 /* --------footer-------- */
@@ -169,19 +172,55 @@ body {
   background-color: var(--navyblue, #2e2f42);
 }
 .head-logo {
-  color: var(--navyblue, #2e2f42);
+  color: var(--iris, #4d5ae5);
   font-size: 18px;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 800;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .footer-logo-studio {
   color: var(--cloud, #f4f4fd);
+  font-family: Raleway, sans-serif;
 }
 .footer-text {
   color: var(--cloud, #f4f4fd);
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
+}
+
+/* ------------PORTFOLIO*/
+
+.pres-btn {
+  color: var(--iris, #4d5ae5);
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: var(--white, #f4f4fd);
+  cursor: pointer;
+}
+.pres-btn:hover,
+.pres-btn:focus {
+  color: #ffffff;
+  background-color: #404bbf;
+}
+
+/* ---------main-portfolio---------- */
+
+.pres-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.pres-item {
+  font-size: 26px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
